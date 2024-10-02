@@ -11,4 +11,4 @@ build_script:
   - python -m unittest discover  # Выполните тесты, если они у вас есть
   
 after_build:
-  - cmd: curl -X POST <https://api.render.com/deploy/srv-cruhsitumphs73ennfh0?key=Wzrx5Xrj5dk> # Отправка запроса на Render
+  - ps: Invoke-RestMethod -Uri "https://api.render.com/deploy/srv-cruhsitumphs73ennfh0?key=Wzrx5Xrj5dk" -Method Post
