@@ -1,0 +1,26 @@
+# appveyor.yml
+version: 1.0.{build}
+image: Visual Studio 2019
+
+# Указываем команды для установки зависимостей
+install:
+  - ps: Install-Product nodejs 14
+  - ps: npm install
+
+# Указываем команды для сборки
+build_script:
+  - echo "Building the project..."
+
+# Указываем команды для тестирования
+test_script:
+  - echo "Running tests..."
+  - python -m unittest discover -s tests
+
+# Указываем команды для деплоя (если необходимо)
+after_success:
+  - echo "Deployment step..."
+
+# Указываем, какие файлы необходимо сохранять
+artifacts:
+  - path/to/your/artifacts/**
+

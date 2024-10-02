@@ -1,2 +1,6 @@
-Flask
-Flask-RESTPlus
+Flask==2.0.3
+Flask-RESTPlus==0.13.0
+Werkzeug==2.0.3
+Flask-Cors==3.0.10
+pytest==6.2.4
+SQLAlchemy==1.4.22
