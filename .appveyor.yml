@@ -1,7 +1,11 @@
 # appveyor.yml
-#version: 0.1.0
+version: 0.1.0
 image: Visual Studio 2019
-configuration: Release
 
+# Установка зависимостей
 install:
   - pip install -r requirements.txt
+
+# Этап сборки
+build_script:
+  - python -m unittest discover  # Выполните тесты, если они у вас есть
