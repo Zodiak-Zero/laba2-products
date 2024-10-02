@@ -1,19 +1,7 @@
 # appveyor.yml
-version: 1.0.{build}
+#version: 0.1.0
 image: Visual Studio 2019
+configuration: Release
 
-# Указываем команды для установки зависимостей
 install:
-  - ps: Install-Product nodejs 14
-  - ps: npm install
-
-# Указываем команды для сборки
-build_script:
-  - echo "Building the project..."
-
-# Указываем команды для тестирования
-test_script:
-  - echo "Running tests..."
-  - python -m unittest discover -s tests
-
-
+  - pip install -r requirements.txt
