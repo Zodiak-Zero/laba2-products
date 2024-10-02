@@ -12,7 +12,7 @@ CORS(app)
 # Регистрация API ресурсов
 api.add_namespace(products_api)
 
-# Маршрут для рендеринга HTML страницы
+# Маршрут для обслуживания HTML страницы
 @app.route('/index.html')
 def index():
     return render_template('index.html')
