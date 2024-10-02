@@ -16,11 +16,4 @@ test_script:
   - echo "Running tests..."
   - python -m unittest discover -s tests
 
-# Указываем команды для деплоя (если необходимо)
-after_success:
-  - echo "Deployment step..."
-
-# Указываем, какие файлы необходимо сохранять
-artifacts:
-  - path/to/your/artifacts/**
 
