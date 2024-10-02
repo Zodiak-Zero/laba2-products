@@ -1,5 +1,5 @@
 # appveyor.yml
-version: 0.1.0
+#version: 0.1.0
 image: Visual Studio 2019
 
 # Установка зависимостей
