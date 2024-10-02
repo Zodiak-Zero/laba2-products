@@ -6,12 +6,6 @@ image: Visual Studio 2019
 install:
   - pip install -r requirements.txt
 
-build:
-  project: ''
-  verbosity: normal
-  mode: script  # Изменяем режим сборки на "script"
-  script: python app.py  # Указываем команду для запуска вашего приложения
-
 
 # Этап сборки
 build_script:
